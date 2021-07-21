@@ -11,13 +11,13 @@ const eqArrays = function(actual, expected) {
   }
   // returns true if conditions above do not run
   return true;
-}
+};
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`✅ Assertion Passed: Everything looks good!`);
   } else {
-    console.log(`❌ Assertion Failed: Everything looks bad!`)
+    console.log(`❌ Assertion Failed: Everything looks bad!`);
   }
 };
 
@@ -28,7 +28,7 @@ const without = (source, itemsToRemove) => {
     output = output.filter(item => item !== itemsToRemove[i]);
   }
   return output;
-}
+};
 console.log(without([1, 2, 3, 4, 5], [2, 3]));
 
 assertArraysEqual(without([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]), [2]); // => [2, 3]
