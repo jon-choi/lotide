@@ -14,6 +14,6 @@ const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`✅ Assertion Passed: Everything looks good!`);
   } else {
-    console.log(`❌ Assertion Failed: Everything looks bad!`)
+    console.log(`❌ Assertion Failed: Everything looks bad!`);
   }
 };
