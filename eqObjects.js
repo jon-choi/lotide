@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
@@ -44,6 +45,7 @@ const eqObjects = function(object1, object2) {
         }
       } else {
         
+        // checking primitive values
         if (object1[oKey1] !== object2[oKey2]) {
           result = false;
         } else {
@@ -55,21 +57,24 @@ const eqObjects = function(object1, object2) {
   return result;
 };
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab,ba), true);
+module.exports = eqObjects;
 
-const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab,abc), false);
+// TESTS
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// assertEqual(eqObjects(ab,ba), true);
+
+// const abc = { a: "1", b: "2", c: "3" };
+// assertEqual(eqObjects(ab,abc), false);
 
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertEqual(eqObjects(cd, dc), true);
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// assertEqual(eqObjects(cd, dc), true);
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqObjects(cd, cd2), false);
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// assertEqual(eqObjects(cd, cd2), false);
 
-const max = { hair: 'black', location: 'victoria', nationality: 'american'};
-const kasi = { hair: 'blue', location: 'winnipeg', nationality: 'canadian'};
-assertEqual(eqObjects(max, kasi), true);
+// const max = { hair: 'black', location: 'victoria', nationality: 'american'};
+// const kasi = { hair: 'blue', location: 'winnipeg', nationality: 'canadian'};
+// assertEqual(eqObjects(max, kasi), true);

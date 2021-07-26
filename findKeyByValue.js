@@ -14,22 +14,27 @@ const findKeyByValue = function(object, value) {
   }
 };
 
-const bestTVShowsByGenre = {
-  sciFi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+module.exports = findKeyByValue;
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// TESTS
+// const bestTVShowsByGenre = {
+//   sciFi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
 
+// TESTS
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
-const favouriteCuisinesByDish = {
-  japanese: 'ramen',
-  italian: 'fettucine alfredo',
-  indian: 'butter chicken'
-};
+// TESTS
+// const favouriteCuisinesByDish = {
+//   japanese: 'ramen',
+//   italian: 'fettucine alfredo',
+//   indian: 'butter chicken'
+// };
 
-assertEqual(findKeyByValue(favouriteCuisinesByDish, 'ramen'), 'japanese');
-assertEqual(findKeyByValue(favouriteCuisinesByDish, 'butter chicken'), 'indian');
-assertEqual(findKeyByValue(favouriteCuisinesByDish, 'poutine'), 'undefined');
+// TESTS
+// assertEqual(findKeyByValue(favouriteCuisinesByDish, 'ramen'), 'japanese');
+// assertEqual(findKeyByValue(favouriteCuisinesByDish, 'butter chicken'), 'indian');
+// assertEqual(findKeyByValue(favouriteCuisinesByDish, 'poutine'), 'undefined');

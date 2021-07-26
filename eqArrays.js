@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const assertEqual = require('./assertEqual');
 
 const eqArrays = function(actual, expected) {

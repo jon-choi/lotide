@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const eqObjects = function(object1, object2) {
   // takes object keys and puts them into an array
   let oKey1 = Object.keys(object1);
@@ -57,13 +58,16 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-assertObjectsEqual({ a: 1}, { a: 2});
-assertObjectsEqual({ a: 2}, { a: 2});
+module.exports = assertObjectsEqual;
 
-let someone = {'name': 'delton'};
-let person = {'name': 'delton'};
-assertObjectsEqual(someone, person);
+// TESTS
+// assertObjectsEqual({ a: 1}, { a: 2});
+// assertObjectsEqual({ a: 2}, { a: 2});
 
-someone = {'name': 'delton'};
-person = {'name': 'sara'};
-assertObjectsEqual(someone, person);
+// let someone = {'name': 'delton'};
+// let person = {'name': 'delton'};
+// assertObjectsEqual(someone, person);
+
+// someone = {'name': 'delton'};
+// person = {'name': 'sara'};
+// assertObjectsEqual(someone, person);

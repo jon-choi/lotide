@@ -15,28 +15,29 @@ const findKey = function(object, callback) {
     }
   }
 };
+// TESTS
+// const result = findKey({
+//   'jon': { teeth: 21 },
+//   'max': { teeth: 22 },
+//   'delton': { teeth: 5 },
+//   'jesse': { teeth: 21 },
+//   'kasi': { teeth: 22 },
+//   'sara': { teeth: 22 }
+// }, x => x.teeth === 5);
 
-const result = findKey({
-  'jon': { teeth: 21 },
-  'max': { teeth: 22 },
-  'delton': { teeth: 5 },
-  'jesse': { teeth: 21 },
-  'kasi': { teeth: 22 },
-  'sara': { teeth: 22 }
-}, x => x.teeth === 5);
+// assertEqual((result), 'delton');
 
-assertEqual((result), 'delton');
+// const result1 = findKey({
+//   'jon': { teeth: 21 },
+//   'max': { teeth: 22 },
+//   'delton': { teeth: 5 },
+//   'jesse': { teeth: 21 },
+//   'kasi': { teeth: 22 },
+//   'sara': { teeth: 22 }
+// }, x => x.teeth === 23);
 
-const result1 = findKey({
-  'jon': { teeth: 21 },
-  'max': { teeth: 22 },
-  'delton': { teeth: 5 },
-  'jesse': { teeth: 21 },
-  'kasi': { teeth: 22 },
-  'sara': { teeth: 22 }
-}, x => x.teeth === 23);
+// assertEqual((result1), undefined);
+// console.log(result);
+// console.log(result1);
 
-assertEqual((result1), undefined);
-console.log(result);
-console.log(result1);
-
+module.exports = findKey;

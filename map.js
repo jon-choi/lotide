@@ -33,13 +33,19 @@ const map = function(array, callback) {
   return results;
 };
 
-const results1 = map(words, word => word.length);
-assertArraysEqual((results1), [1, 2, 8, 2, 5]);
+module.exports = map;
 
-const results2 = map(words, word => word.toUpperCase());
-assertArraysEqual((results2), ['I', 'AM', 'SPILLING', 'MY', 'SPOON']);
+//TESTS
+// const results1 = map(words, word => word.length);
+// assertArraysEqual((results1), [1, 2, 8, 2, 5]);
 
-const results3 = map(words, word => word[0]);
-assertArraysEqual((results3), ['i', 'a', 's', 'm', 's']);
+// const results2 = map(words, word => word.toUpperCase());
+// assertArraysEqual((results2), ['I', 'AM', 'SPILLING', 'MY', 'SPOON']);
+
+// const results3 = map(words, word => word[0]);
+// assertArraysEqual((results3), ['i', 'a', 's', 'm', 's']);
+
+// const fullPhrase = words.join(' ');
+// console.log(fullPhrase);
 
 
