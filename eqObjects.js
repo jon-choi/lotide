@@ -1,26 +1,5 @@
-/* eslint-disable no-unused-vars */
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`❌ Assertion Failed: ${actual} === ${expected}`);
-  }
-};
-
-const eqArrays = function(actual, expected) {
-  // returns false if array lengths are not the same
-  if (actual.length !== expected.length) {
-    return false;
-  }
-  // returns false if elements are not the same
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  }
-  // returns true if results above do not run
-  return true;
-};
+const eqArrays = require('./eqArrays');
+const assertEqual = require('./assertEqual');
 
 const eqObjects = function(object1, object2) {
   // takes object keys and puts them into an array

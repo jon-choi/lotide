@@ -2,7 +2,7 @@
   "dependencies": {
     "eslint": "^7.31.0"
   },
-  "name": "lotide",
+  "name": "@jonchoi11/lotide",
   "version": "1.0.0",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -19,11 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/jon-choi/lotide.git"
   },
-  "author": "",
+  "author": "@jonchoi11/lotide",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jon-choi/lotide/issues"
   },
   "homepage": "https://github.com/jon-choi/lotide#readme",
-  "description": ""
+  "description": "Lotide project for Lighthouse Labs."
 }
